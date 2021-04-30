@@ -1,0 +1,4 @@
+#!/usr/bin/env fish
+set --export CC (which gcc)
+corral run -- ponyc --debug -Dopenssl_1.1.x
+and ./psig4 --verbose
